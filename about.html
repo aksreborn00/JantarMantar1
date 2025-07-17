@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home | Jantar Mantar Legacy</title>
+  <link href="https://fonts.googleapis.com/css2?family=Unica+One&family=Orbitron:wght@600&family=Exo+2:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* Base reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Exo 2', sans-serif;
+      background: linear-gradient(to bottom right, #020024, #090979, #00d4ff);
+      color: #ffffff;
+      overflow-x: hidden;
+    }
+
+    header {
+      text-align: center;
+      padding: 50px 20px 20px;
+      animation: fadeInDown 2s ease;
+    }
+
+    header h1 {
+      font-family: 'Unica One', cursive;
+      font-size: 3.8rem;
+      color: #ffe600;
+      text-shadow: 0 0 12px #fff94c;
+    }
+
+    header p {
+      font-size: 1.3rem;
+      margin-top: 10px;
+      font-style: italic;
+      color: #c2fcff;
+    }
+
+    .intro {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      padding: 60px 30px;
+      gap: 40px;
+      animation: fadeInUp 2.5s ease;
+    }
+
+    .intro img {
+      width: 400px;
+      max-width: 90%;
+      border-radius: 20px;
+      box-shadow: 0 0 20px #00f7ff;
+      animation: float 6s ease-in-out infinite;
+    }
+
+    .intro .text {
+      max-width: 600px;
+    }
+
+    .intro .text h2 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 2rem;
+      margin-bottom: 15px;
+      color: #00ffdd;
+      text-shadow: 0 0 10px #00ffdd;
+    }
+
+    .intro .text p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #e1faff;
+    }
+
+    .section {
+      padding: 60px 30px;
+      background-color: #00000010;
+      backdrop-filter: blur(5px);
+      animation: fadeIn 3s ease;
+    }
+
+    .section h2 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 2.2rem;
+      text-align: center;
+      margin-bottom: 25px;
+      color: #ff7b00;
+      text-shadow: 0 0 10px #ff9900;
+    }
+
+    .section p {
+      max-width: 900px;
+      margin: 0 auto;
+      font-size: 1.1rem;
+      color: #f5f5f5;
+      text-align: center;
+    }
+
+    .image-banner {
+      width: 100%;
+      display: block;
+      margin: 40px auto;
+      max-width: 100%;
+      border-radius: 15px;
+      box-shadow: 0 0 15px #00f7ff;
+    }
+
+    footer {
+      padding: 30px;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #ccc;
+      border-top: 1px solid #333;
+      margin-top: 60px;
+    }
+
+    /* Animations */
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-50px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(50px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-15px); }
+    }
+
+    @media (max-width: 768px) {
+      .intro {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Jantar Mantar: Legacy of the Stars</h1>
+    <p>Unveiling the universe through ancient brilliance and timeless design</p>
+  </header>
+
+  <section class="intro">
+    <img src="images/king1.jpg" alt="Jantar Mantar Image">
+    <div class="text">
+      <h2>Astronomy Meets Architecture</h2>
+      <p>
+        Built by Maharaja Jai Singh II in the 18th century, Jantar Mantar is a marvel of scientific and architectural excellence. This ancient observatory wasn't just ahead of its time—it bent time itself with its giant instruments, precisely designed to measure celestial phenomena using only stone, scale, and sunlight.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Why You Should Explore Jantar Mantar</h2>
+    <p>
+      Jantar Mantar is not just a collection of sculptures. It's a cosmic calculator, a stone-built observatory, and a silent dialogue between humanity and the universe. Discover the instruments used to calculate time, forecast eclipses, track stars, and even predict planetary positions—without a single lens or machine.
+    </p>
+    <img class="image-banner" src="images/py1.jpg" alt="Jantar Mantar Instrument">
+  </section>
+
+  <footer>
+    © 2025 Jantar Mantar Project | Designed with love and curiosity 🌌
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jantar Mantar | Time Beyond Time</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Exo+2:wght@400;700&family=Zen+Dots&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* Reset and body */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Exo 2', sans-serif;
+      background: radial-gradient(circle at top center, #090979, #020024 80%);
+      color: #fff;
+      overflow: hidden;
+      height: 100vh;
+    }
+
+    /* Background stars animation */
+    body::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: url('images/ig1.jpg') repeat;
+      opacity: 0.3;
+      z-index: -1;
+    }
+
+    header {
+      text-align: center;
+      padding-top: 5vh;
+      animation: fadeIn 2s ease-out;
+    }
+
+    header h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 3.5rem;
+      letter-spacing: 2px;
+      text-shadow: 0 0 15px #00f7ff;
+      color: #00f7ff;
+    }
+
+    header h2 {
+      font-family: 'Zen Dots', sans-serif;
+      font-size: 1.5rem;
+      margin-top: 1rem;
+      color: #ffe600;
+      text-shadow: 0 0 5px #ffe600;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 60px;
+      gap: 20px;
+      animation: slideIn 2.5s ease-in-out;
+    }
+
+    .buttons a {
+      text-decoration: none;
+      padding: 15px 30px;
+      border-radius: 40px;
+      background: linear-gradient(145deg, #00f7ff, #007ea7);
+      color: #000;
+      font-weight: bold;
+      font-size: 1.1rem;
+      font-family: 'Orbitron', sans-serif;
+      box-shadow: 0 0 10px #00f7ff, 0 0 30px #00f7ff;
+      transition: all 0.3s ease;
+    }
+
+    .buttons a:hover {
+      transform: scale(1.1);
+      background: linear-gradient(145deg, #ffe600, #ff9900);
+      box-shadow: 0 0 20px #ffe600, 0 0 40px #ffe600;
+    }
+
+    .planet {
+      position: absolute;
+      bottom: 30px;
+      right: 40px;
+      width: 150px;
+      animation: float 5s ease-in-out infinite;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideIn {
+      from { opacity: 0; transform: translateY(60px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-15px); }
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+      .buttons a {
+        font-size: 1rem;
+        padding: 12px 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Jantar Mantar</h1>
+    <h2>Time Beyond Time</h2>
+  </header>
+
+  <div class="buttons">
+    <a href="about.html">About</a>
+    <a href="purpose.html">Purpose</a>
+    <a href="structure.html">Instruments</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="facts.html">Fun Facts</a>
+    <a href="explore.html">Explore</a>
+    <a href="map.html">Map</a>
+  </div>
+
+  <img src="images/ig1.jpg" alt="JantarMantar" class="planet" />
+
+</body>
+</html>

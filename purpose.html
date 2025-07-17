@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Purpose | Jantar Mantar</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600&family=Orbitron&family=Unica+One&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Rajdhani', sans-serif;
+      background: radial-gradient(ellipse at bottom, #050505, #0d1b2a);
+      color: #e0f7ff;
+      overflow-x: hidden;
+    }
+
+    header {
+      text-align: center;
+      padding: 80px 20px 40px;
+      background: linear-gradient(180deg, #050505, #0d1b2a);
+    }
+
+    header h1 {
+      font-family: 'Unica One', cursive;
+      font-size: 3.5rem;
+      color: #ffe600;
+      text-shadow: 0 0 20px #ffee00;
+    }
+
+    header p {
+      font-size: 1.3rem;
+      color: #c2fcff;
+      margin-top: 10px;
+      font-style: italic;
+    }
+
+    .section {
+      padding: 60px 30px;
+      max-width: 1200px;
+      margin: auto;
+      text-align: center;
+      animation: fadeInUp 2s ease;
+    }
+
+    .section h2 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 2.5rem;
+      color: #00ffe7;
+      margin-bottom: 20px;
+      text-shadow: 0 0 12px #00ffe7;
+    }
+
+    .section p {
+      font-size: 1.2rem;
+      color: #e5f9ff;
+      line-height: 1.8;
+    }
+
+    .image-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .image-box {
+      width: 300px;
+      background: #11131b;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 0 20px #00f2ff;
+      transition: transform 0.3s ease;
+    }
+
+    .image-box:hover {
+      transform: scale(1.05);
+    }
+
+    .image-box img {
+      width: 100%;
+      display: block;
+    }
+
+    .image-box p {
+      padding: 15px;
+      font-size: 1rem;
+      color: #c8f6ff;
+    }
+
+    .parallax {
+      background-image: url("https://upload.wikimedia.org/wikipedia/commons/e/e3/Delhi_Jantar_Mantar_Observatory_2006.jpg");
+      height: 400px;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin: 60px 0;
+      border-top: 5px solid #00ffe7;
+      border-bottom: 5px solid #00ffe7;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      font-size: 0.9rem;
+      color: #aaa;
+      background: #020a1a;
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(50px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 768px) {
+      .image-row {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      header h1 {
+        font-size: 2.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>The Cosmic Purpose</h1>
+    <p>Why was Jantar Mantar created? Discover the genius behind its vision.</p>
+  </header>
+
+  <section class="section">
+    <h2>Bridging Earth and Stars</h2>
+    <p>
+      In the 18th century, Maharaja Jai Singh II saw a need that no one else did: India’s astronomical calculations had grown outdated. So he built Jantar Mantar—not one, but five observatories—to correct astronomical tables, chart planetary paths, predict eclipses, and bring Vedic science into harmony with reality.
+    </p>
+
+    <div class="image-row">
+      <div class="image-box">
+        <img src="images/sy1.jpg" alt="Samrat Yantra">
+        <p>Samrat Yantra – A giant sundial accurate to seconds.</p>
+      </div>
+      <div class="image-box">
+        <img src="images/py1.jpg" alt="Jai Prakash Yantra">
+        <p>Jai Prakash Yantra – Hollow hemispheres to track celestial bodies.</p>
+      </div>
+      <div class="image-box">
+        <img src="images/ry1.jpg" alt="Ram Yantra">
+        <p>Ram Yantra – Measures altitude and azimuth of celestial objects.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="parallax"></div>
+
+  <section class="section">
+    <h2>Reconnecting with the Cosmos</h2>
+    <p>
+      Jai Singh II’s dream was to build instruments that defied time. His structures use sunlight, geometry, and stone—not wires, not electronics—to interpret celestial laws. These monuments aren’t ruins. They are still accurate, still usable, and still whispering the secrets of space to those who listen.
+    </p>
+  </section>
+
+  <footer>
+    © 2025 Jantar Mantar Project | Designed for the universe 🪐
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!-- map.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Map View | Jantar Mantar</title>
+  <style>
+    body {
+      background: black;
+      color: white;
+      font-family: 'Segoe UI', sans-serif;
+      text-align: center;
+      margin: 0;
+    }
+    h1 {
+      padding: 40px;
+      font-size: 2.8rem;
+      color: #00ffe7;
+    }
+    .map-container {
+      position: relative;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .map-container img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 0 20px #00f7ff;
+    }
+    .marker {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: #ffe600;
+      border-radius: 50%;
+      box-shadow: 0 0 15px #ffe600;
+      cursor: pointer;
+      animation: pulse 2s infinite;
+    }
+    .marker:hover::after {
+      content: attr(data-name);
+      position: absolute;
+      top: -30px;
+      left: 20px;
+      background: #111;
+      color: #fff;
+      padding: 5px 10px;
+      font-size: 0.9rem;
+      border-radius: 5px;
+      white-space: nowrap;
+    }
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.4); }
+      100% { transform: scale(1); }
+    }
+  </style>
+</head>
+<body>
+  <h1>Map of Jantar Mantar</h1>
+  <div class="map-container">
+    <img src="images/mp1.jpg">
+    <div class="marker" data-name="Samrat Yantra" style="top: 30%; left: 45%;"></div>
+    <div class="marker" data-name="Jai Prakash Yantra" style="top: 50%; left: 55%;"></div>
+    <div class="marker" data-name="Ram Yantra" style="top: 65%; left: 35%;"></div>
+  </div>
+</body>
+</html>
